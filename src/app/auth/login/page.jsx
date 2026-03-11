@@ -101,27 +101,14 @@ export default function LoginPage() {
     if (error) setError(error.message);
   };
 
-//   if (loading) {
-//   return (
-//     <main className="min-h-screen flex items-center justify-center bg-[#8C92D8]">
-//       <div className="text-center space-y-3">
-//         <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto" />
-//         <p className="text-white text-lg font-medium">
-//           Redirecting to Classroom...
-//         </p>
-//       </div>
-//     </main>
-//   );
-// }
-
 return (
-  <main className="min-h-screen flex items-center justify-center bg-[#8C92D8] px-4 py-12">
+  <main className="min-h-screen flex items-center justify-center bg-[#fcba03] px-4 py-12">
     <div className="w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8">
 
       {/* Brand */}
       <div className="text-center mb-3">
-        <h1 className="text-3xl font-extrabold text-[#5A4FCF]">
-          Welcome back to <span className="text-4xl text-violet-950 font-mono">GrinIn</span> 
+        <h1 className="text-3xl font-extrabold text-[#8a6200]">
+          Welcome back to <span className="text-4xl text-yellow-900 font-mono">Impact Hub</span> 
         </h1>
       </div>
 
@@ -133,7 +120,7 @@ return (
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all text-black"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A227] focus:border-transparent transition-all text-black"
         />
 
         {/* Password */}
@@ -142,7 +129,7 @@ return (
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all text-black"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A227] focus:border-transparent transition-all text-black"
         />
 
         {/* Error */}
@@ -155,7 +142,7 @@ return (
         {/* Email Login Button */}
         <button
           onClick={handleEmailLogin}
-          className="w-full bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+          className="w-full bg-[#C9A227] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
         >
           Login with Email
         </button>
@@ -181,10 +168,10 @@ return (
 
       {/* Register Link */}
       <p className="text-sm text-center mt-8 text-gray-600">
-        Don’t have an account?{" "}
+        Don't have an account?{" "}
         <Link
           href="/auth/register"
-          className="font-semibold text-[#5A4FCF] hover:underline"
+          className="font-semibold text-[#C9A227] hover:underline"
         >
           Register
         </Link>

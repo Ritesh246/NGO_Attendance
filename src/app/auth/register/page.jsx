@@ -54,16 +54,16 @@ export default function RegisterPage() {
   };
 
   return (
-  <main className="min-h-screen flex items-center justify-center bg-[#8C92D8] px-4 py-12">
+  <main className="min-h-screen flex items-center justify-center bg-[#fcba03] px-4 py-12">
     <div className="w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8">
 
       {/* Brand Header */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-extrabold text-[#5A4FCF]">
-          Join <span className="text-4xl text-violet-950 font-mono">GrinIn</span> 
+        <h1 className="text-3xl font-extrabold text-[#8a6200]">
+          Join <span className="text-4xl text-yellow-900 font-mono">Impact Hub</span> 
         </h1>
         <p className="text-sm text-gray-500 mt-2">
-          Create your GenZ vala attendance account
+          Create your NGO attendance account
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export default function RegisterPage() {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all text-black"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A227] focus:border-transparent transition-all text-black"
         />
 
         {/* Password Input */}
@@ -84,7 +84,7 @@ export default function RegisterPage() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all text-black"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C9A227] focus:border-transparent transition-all text-black"
         />
 
         {/* Error */}
@@ -98,7 +98,7 @@ export default function RegisterPage() {
         <button
           onClick={handleEmailSignup}
           disabled={loading}
-          className="w-full bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
+          className="w-full bg-[#C9A227] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
         >
           {loading ? "Creating account..." : "Sign up with Email"}
         </button>
@@ -127,7 +127,7 @@ export default function RegisterPage() {
         Already have an account?{" "}
         <Link
           href="/auth/login"
-          className="font-semibold text-[#5A4FCF] hover:underline"
+          className="font-semibold text-[#C9A227] hover:underline"
         >
           Login
         </Link>
