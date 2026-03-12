@@ -113,7 +113,7 @@ export default function StudentClassroomPage() {
   // ---------- LOADING ----------
   if (checkingAuth) {
     return (
-      <div className="min-h-screen flex text-3xl text-blue-900 font-semibold items-center bg-[#8C92D8] justify-center">
+      <div className="min-h-screen flex text-3xl text-orange-900 font-semibold items-center bg-[#fcba03] justify-center">
         Checking access...
       </div>
     );
@@ -121,24 +121,24 @@ export default function StudentClassroomPage() {
 
   // ---------- UI ----------
   return (
-  <div className="min-h-screen bg-[#8C92D8]">
+  <div className="min-h-screen bg-[#ffd35b]">
 
     {/* Top Bar */}
     <div className="flex items-center justify-between px-6 mx-1.5 py-3 rounded-4xl translate-y-2 bg-white/95 backdrop-blur-md shadow-md">
-      <h1 className="text-2xl font-bold text-[#5A4FCF]">
-        Student
+      <h1 className="text-2xl font-bold text-blue-950">
+        Volunteer
       </h1>
 
       <button
         onClick={openModal}
-        className="bg-[#5A4FCF] text-white px-3 py-2 rounded-2xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
+        className="bg-[#ffd35b] text-black px-3 py-2 rounded-2xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
       >
-        Join Class
+        Join Events
       </button>
     </div>
 
-    <div className="text-white text-4xl font-semibold font-mono flex items-center justify-center pt-10">
-      Classroom
+    <div className="text-blue-950 text-4xl font-extrabold font-mono flex items-center justify-center pt-10">
+      Event Room
     </div>
 
     {/* Classes Section */}
@@ -150,13 +150,13 @@ export default function StudentClassroomPage() {
             No classes joined yet
           </h2>
           <p className="text-white/80 text-sm mb-6">
-            Join a class using the code shared by your professor.
+            Join an event using the code shared by your NGO admin.
           </p>
           <button
             onClick={openModal}
-            className="bg-white text-[#5A4FCF] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
+            className="bg-white text-[#fc9003] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
           >
-            Join Your First Class
+            Join Your First Event
           </button>
         </div>
       ) : (
@@ -170,12 +170,12 @@ export default function StudentClassroomPage() {
               }
               className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             >
-              <h2 className="text-xl font-semibold text-[#5A4FCF] mb-2">
+              <h2 className="text-xl font-semibold text-[#0c087b] mb-2">
                 {cls.name}
               </h2>
 
               <div className="text-sm text-gray-500">
-                Click to enter classroom
+                Click to enter Event room
               </div>
             </div>
           ))}
@@ -189,8 +189,8 @@ export default function StudentClassroomPage() {
       <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center px-4 z-50">
         <div className="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl">
 
-          <h2 className="text-2xl font-bold text-[#5A4FCF] mb-6">
-            Join a Class
+          <h2 className="text-2xl font-semibold text-[#ffd971] mb-6">
+            Join Event
           </h2>
 
           <input
@@ -217,7 +217,7 @@ export default function StudentClassroomPage() {
             <button
               onClick={joinClass}
               disabled={loading}
-              className="bg-[#5A4FCF] text-white px-5 py-2.5 rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              className="bg-[#fcba03] text-white px-5 py-2.5 rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {loading ? "Joining..." : "Join"}
             </button>

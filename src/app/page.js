@@ -339,7 +339,9 @@ const NGOLandingPage = () => {
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <div></div>
           <div>
-            <div className="font-mono text-3xl text-amber-400 text-semibold">Impact Hub</div>
+            <div className="font-mono text-3xl text-amber-400 text-semibold">
+              <span className="text-black font-semibold">Impact</span><span className="font-semibold">Hub</span>
+            </div>
           </div>
         </div>
 
@@ -353,7 +355,7 @@ const NGOLandingPage = () => {
 
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
           <Link href="/auth/login">
-          <button className="p-2 ml-2 text-yellow-500 font-semibold ">
+          <button className="p-2 ml-2 text-yellow-500 font-semibold font-mono ">
             SignIn
           </button>
         </Link>

@@ -192,15 +192,15 @@ export default function RegisterFacePage() {
   if (!user) return null;
 
   return (
-  <main className="min-h-screen flex items-center justify-center bg-[#8C92D8] px-4 py-12">
+  <main className="min-h-screen flex items-center justify-center bg-[#fcba03] px-4 py-12">
     <div className="w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 text-center">
 
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-3xl font-extrabold text-[#5A4FCF]">
+        <h1 className="text-3xl font-extrabold text-[#dd4d05]">
           Register Your Face
         </h1>
-        <p className="text-sm text-gray-500 mt-2">
+        <p className="text-sm text-red-500 mt-2">
           This will be used for secure attendance verification
         </p>
       </div>
@@ -234,7 +234,7 @@ export default function RegisterFacePage() {
         <button
           onClick={capturePhoto}
           disabled={!cameraReady}
-          className="w-full bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#fcba03] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {cameraReady ? "Capture Face" : "Starting Camera…"}
         </button>
@@ -251,7 +251,7 @@ export default function RegisterFacePage() {
           <button
             onClick={submitPhoto}
             disabled={loading}
-            className="w-1/2 bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-1/2 bg-[#fcba03] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {loading ? "Uploading..." : "Submit"}
           </button>

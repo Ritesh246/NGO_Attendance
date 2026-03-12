@@ -92,24 +92,24 @@ export default function StudentClassPage() {
      UI
   -------------------------------------------------- */
   return (
-  <div className="min-h-screen bg-[#8C92D8] flex items-center justify-center px-4 py-12">
+  <div className="min-h-screen bg-[#ffd35b] flex items-center justify-center px-4 py-12">
 
     <div className="w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8 text-center">
 
       {/* Header */}
-      <h1 className="text-3xl font-extrabold text-[#5A4FCF] mb-2">
-        {className.toUpperCase()} Class
+      <h1 className="text-3xl font-extrabold font-mono text-blue-950 mb-2">
+        {className}Event
       </h1>
 
       <p className="text-sm text-gray-500 mb-8">
-        Enter the attendance code shared by your professor
+        Enter the code shared by your admin
       </p>
 
       {/* Input */}
       <input
         value={attendanceCode}
         onChange={(e) => setAttendanceCode(e.target.value)}
-        placeholder="Enter attendance code"
+        placeholder="Enter code"
         disabled={loading}
         className="w-full px-4 py-3 rounded-xl border border-gray-300 text-center text-lg tracking-widest font-mono text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all mb-5 disabled:bg-gray-100"
       />
@@ -118,9 +118,9 @@ export default function StudentClassPage() {
       <button
         onClick={handleVerifyCode}
         disabled={loading || !classId}
-        className="w-full bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full text-blue-950 bg-gray-200  py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {loading ? "Verifying..." : "Join Attendance"}
+        {loading ? "Verifying..." : "Join "}
       </button>
 
       {/* Error */}

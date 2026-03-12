@@ -103,17 +103,17 @@ export default function ProfessorClassroomPage() {
 
   // ---------- UI ----------
   return (
-  <div className="min-h-screen bg-[#8C92D8]">
+  <div className="min-h-screen bg-[#fcba03]">
 
     {/* Top Bar */}
     <div className="flex items-center justify-between px-6 mx-1.5 py-3 rounded-4xl translate-y-2 bg-white/95 backdrop-blur-md shadow-md">
-      <h1 className="text-2xl font-bold text-[#5A4FCF]">
+      <h1 className="text-2xl font-bold text-[#a27701]">
         Professor
       </h1>
 
       <button
         onClick={openModal}
-        className="bg-[#5A4FCF] text-white px-5 py-2.5 rounded-3xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
+        className="bg-[#fcba03] text-white px-5 py-2.5 rounded-3xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
       >
        Create Class
       </button>
@@ -136,7 +136,7 @@ export default function ProfessorClassroomPage() {
           </p>
           <button
             onClick={openModal}
-            className="bg-white text-[#5A4FCF] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
+            className="bg-white text-[#fcba03] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
           >
             Create Your First Class
           </button>
@@ -152,7 +152,7 @@ export default function ProfessorClassroomPage() {
               }
               className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             >
-              <h2 className="text-xl font-semibold text-[#5A4FCF] mb-3">
+              <h2 className="text-xl font-semibold text-[#fcba03] mb-3">
                 {cls.name}
               </h2>
 
@@ -175,7 +175,7 @@ export default function ProfessorClassroomPage() {
       <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center px-4 z-50">
         <div className="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl">
 
-          <h2 className="text-2xl font-bold text-[#5A4FCF] mb-6">
+          <h2 className="text-2xl font-bold text-[#fcba03] mb-6">
             Create a New Class
           </h2>
 
@@ -203,7 +203,7 @@ export default function ProfessorClassroomPage() {
             <button
               onClick={createClass}
               disabled={loading}
-              className="bg-[#5A4FCF] text-white px-5 py-2.5 rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              className="bg-[#fcba03] text-white px-5 py-2.5 rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {loading ? "Creating..." : "Create"}
             </button>

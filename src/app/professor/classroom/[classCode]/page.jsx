@@ -203,7 +203,7 @@ export default function ProfessorClassPage() {
 
   /* ---------------- UI ---------------- */
   return (
-  <div className="min-h-screen bg-[#8C92D8] px-4 md:px-8 py-8">
+  <div className="min-h-screen bg-[#ffd35b] px-4 md:px-8 py-8">
 
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
@@ -218,7 +218,7 @@ export default function ProfessorClassPage() {
           className={`px-6 py-3 rounded-xl font-semibold shadow-md transition-all ${
             loading
               ? "bg-gray-400 text-white"
-              : "bg-white text-[#5A4FCF] hover:shadow-lg hover:scale-[1.03]"
+              : "bg-white text-[#ffd35b] hover:shadow-lg hover:scale-[1.03]"
           }`}
         >
           {loading ? "Creating session..." : "Take Attendance"}
@@ -230,7 +230,7 @@ export default function ProfessorClassPage() {
     {showAttendancePanel && (
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-lg mb-10">
 
-        <h2 className="text-xl font-bold text-[#5A4FCF] mb-6">
+        <h2 className="text-xl font-bold text-[#ffd35b] mb-6">
           Attendance Session
         </h2>
 
@@ -246,7 +246,7 @@ export default function ProfessorClassPage() {
             className={`px-5 py-3 rounded-xl font-semibold transition-all ${
               isActivated
                 ? "bg-gray-400 text-white"
-                : "bg-[#5A4FCF] text-white hover:shadow-lg hover:scale-[1.03]"
+                : "bg-[#ffd35b] text-white hover:shadow-lg hover:scale-[1.03]"
             }`}
           >
             {isActivated ? "Activated" : "Activate"}
@@ -266,14 +266,14 @@ export default function ProfessorClassPage() {
     <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-6 md:p-8">
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-        <h2 className="text-2xl font-bold text-[#5A4FCF]">
+        <h2 className="text-2xl font-bold text-[#e7a900]">
           Attendance Records
         </h2>
 
         {attendanceRecords.length > 0 && (
           <button
             onClick={handleDownloadExcel}
-            className="px-5 py-2.5 bg-[#5A4FCF] text-white rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
+            className="px-5 py-2.5 bg-[#fcca41] text-white rounded-xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
           >
             Download Excel
           </button>

@@ -132,15 +132,15 @@ export default function StudentSelfiePage() {
 
   /* ---------- UI ---------- */
   return (
-    <div className="min-h-screen bg-[#8C92D8] flex items-center justify-center px-4 py-10">
+    <div className="min-h-screen bg-[#ffd35b] flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-md bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-6 text-center">
         {/* Header */}
         <h1 className="text-2xl font-extrabold text-[#5A4FCF] mb-2">
-          {classCode.toUpperCase()} Attendance
+          {classCode} Presenty
         </h1>
 
         <p className="text-sm text-gray-500 mb-6">
-          Capture your selfie to mark attendance
+          Capture your selfie to mark presenty
         </p>
 
         {/* Camera Frame */}
@@ -170,7 +170,7 @@ export default function StudentSelfiePage() {
               onChange={(e) => setSelfRollNumber(e.target.value)}
               placeholder="Enter your roll number"
               disabled={capturedImage}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-center font-mono text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition disabled:bg-gray-100"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-center font-mono text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#ffd35b] focus:border-transparent transition disabled:bg-gray-100"
             />
 
             {/* Neighbor Rolls */}
@@ -180,7 +180,7 @@ export default function StudentSelfiePage() {
                 onChange={(e) => setNewRoll(e.target.value)}
                 placeholder="Neighbor roll no."
                 disabled={neighborRolls.length >= 2 || capturedImage}
-                className="flex-1 px-4 py-3 rounded-xl border border-gray-300 font-mono text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition disabled:bg-gray-100"
+                className="flex-1 px-4 py-3 rounded-xl border border-gray-300 font-mono text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#ffd35b] focus:border-transparent transition disabled:bg-gray-100"
               />
               <button
                 onClick={addRoll}
