@@ -76,7 +76,7 @@ export default function OnboardingPage() {
   if (!user) return null;
 
   return (
-  <main className="min-h-screen flex items-center justify-center bg-[#8C92D8] px-4 py-12">
+  <main className="min-h-screen flex items-center justify-center bg-[#fcba03] px-4 py-12">
     <div className="w-full max-w-lg bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-8">
 
       {/* Header */}

@@ -107,20 +107,20 @@ export default function ProfessorClassroomPage() {
 
     {/* Top Bar */}
     <div className="flex items-center justify-between px-6 mx-1.5 py-3 rounded-4xl translate-y-2 bg-white/95 backdrop-blur-md shadow-md">
-      <h1 className="text-2xl font-bold text-[#a27701]">
-        Professor
+      <h1 className="text-2xl font-bold text-blue-950">
+        NGO
       </h1>
 
       <button
         onClick={openModal}
-        className="bg-[#fcba03] text-white px-5 py-2.5 rounded-3xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
+        className="bg-[#fcba03] text-blue-950 px-5 py-2.5 rounded-3xl font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300"
       >
-       Create Class
+       Create Event
       </button>
     </div>
 
     <div className="text-white text-4xl font-semibold font-mono flex items-center justify-center pt-10">
-      Classroom
+      Events
     </div>
 
     {/* Classes Section */}
@@ -129,16 +129,16 @@ export default function ProfessorClassroomPage() {
       {classes.length === 0 ? (
         <div className="flex flex-col items-center justify-center mt-24 text-center">
           <h2 className="text-2xl font-semibold text-white mb-2">
-            No classes yet
+            No events yet
           </h2>
           <p className="text-white/80 text-sm mb-6">
-            Create your first class and start taking attendance.
+            Create your first event and start taking presenty.
           </p>
           <button
             onClick={openModal}
             className="bg-white text-[#fcba03] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
           >
-            Create Your First Class
+            Create Your First Event
           </button>
         </div>
       ) : (
@@ -157,7 +157,7 @@ export default function ProfessorClassroomPage() {
               </h2>
 
               <div className="text-sm text-gray-600">
-                Class Code
+                Event Code
               </div>
 
               <div className="mt-1 font-mono text-lg text-gray-800 tracking-wide">
@@ -176,7 +176,7 @@ export default function ProfessorClassroomPage() {
         <div className="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl">
 
           <h2 className="text-2xl font-bold text-[#fcba03] mb-6">
-            Create a New Class
+            Create a New Event
           </h2>
 
           <input
