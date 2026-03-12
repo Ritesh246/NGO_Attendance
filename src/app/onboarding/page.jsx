@@ -81,7 +81,7 @@ export default function OnboardingPage() {
 
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-extrabold text-[#5A4FCF]">
+        <h1 className="text-3xl font-extrabold text-[#0e0666]">
           Complete Your Profile
         </h1>
         <p className="text-sm text-gray-500 mt-2">
@@ -98,8 +98,8 @@ export default function OnboardingPage() {
           className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all"
         >
           <option value="">Select Role</option>
-          <option value="student">Student</option>
-          <option value="professor">Professor</option>
+          <option value="student">Volunteer</option>
+          <option value="professor">NGO</option>
         </select>
 
         {/* Student Fields */}
@@ -116,32 +116,32 @@ export default function OnboardingPage() {
 
             <input
               type="text"
-              placeholder="Roll Number"
+              placeholder="Volunteer Id"
               value={rollNo}
               onChange={(e) => setRollNo(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0a0358] focus:border-transparent transition-all"
             />
 
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0c0372a6] focus:border-transparent transition-all"
             >
               <option value="">Select Department</option>
-              <option value="Computer">Computer</option>
-              <option value="IT">IT</option>
-              <option value="AIDS">AIDS</option>
+              <option value="Computer">Healthcare</option>
+              <option value="IT">Civil Services</option>
+              <option value="AIDS">Others</option>
             </select>
 
             <select
               value={batch}
               onChange={(e) => setBatch(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5A4FCF] focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#07005a] focus:border-transparent transition-all"
             >
               <option value="">Select Batch</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
+              <option value="A">24-25</option>
+              <option value="B">23-24</option>
+              <option value="C">22-23</option>
             </select>
           </div>
         )}
@@ -157,7 +157,7 @@ export default function OnboardingPage() {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className="w-full bg-[#5A4FCF] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+          className="w-full bg-[#150f5c] text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {loading ? "Saving..." : "Continue"}
         </button>
